@@ -2,29 +2,7 @@
 <html manifest="app.manifest">
 
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <title>spacedesk viewer</title>
-  <meta http-equiv="Cache-control" content="no-cache">
-  <meta name="msapplication-tap-highlight" content="no">
-  <meta name="mobile-web-app-capable" content="yes">
-  <meta http-equiv="cleartype" content="on">
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black">
-  <meta name="viewport" id="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=10">
-  <meta name="apple-mobile-web-app-title" content="spacedesk">
-  <meta name="description"
-    content="spacedesk expands the Windows desktop computer screen to other computers over the local area network.">
-  <meta name="keywords"
-    content="spacedesk, windows desktop, desktop cloning, desktop duplication, desktop mirroring, desktop extension, extend desktop, maxivista, maxivista alternative, airdisplay, airdisplay alternative, Squirrels, AirParrot, AirParrot 2, AirParrot Alternative, Air, Air Alternative, Wifi, kvm, network display, monitor software, network monitor, windows display, display cloning, display mirroring, mirror display, windows aero, windows 8 display, multi montior, zonescreen, zone screen">
-  <meta name="copyright" content="datronicsoft">
-  <meta name="author" content="David Golovin">
-  <meta name="robots" content="index, follow">
-  <meta property="og:description"
-    content="spacedesk expands the Windows desktop computer screen to other computers over the local area network.">
-  <meta property="og:title" content="spacedesk">
-  <meta property="og:site_name" content="spacedesk">
-  <meta property="og:url" content="https://www.facebook.com/pages/Spacedesk/330909083726073">
-  <meta property="og:image" content="img/Logo.png">
+  <title>DeskVR viewer</title>
   <link rel="apple-touch-icon" href="img/icon_ios.png" type="image/x-icon">
   <link href="img/favicon.ico" rel="icon" type="image/x-icon">
   <style type="text/css">
@@ -58,10 +36,8 @@
               <p id="errorText"></p><a href="javascript:location.reload();" class="input-button-large">Retry</a>
             </div>
             <div id="broadcast" style="display:none" class="hide-on-connect">
-              <p class="description"><span class="loading-ball"><span class="spinner"></span> </span>Searching
-                spacedesk server</p>
-              <div id="broadcastlist"></div><a id="enterself" href="#">Connect
-                by entering address</a>
+              <p class="description"><span class="loading-ball"><span class="spinner"></span> </span>Searching server</p>
+              <div id="broadcastlist"></div><a id="enterself" href="#">Connect by entering address</a>
             </div>
             <div id="input">
               <p class="description hide-on-connect">Please enter your primary-PC network address</p><input id="server"
@@ -75,34 +51,7 @@
               <p class="show-on-connect"><a id="reload" class="reloadPage">Cancel</a></p>
             </div>
           </section>
-          <section id="help" class="animated">
-            <div class="wizard">
-              <section id="step-start" class="animated active" data-closeable="true">
-                <h2>Hello!</h2>
-                <p class="lead"><br>This Guide will help you to connect basicview with your spacedesk
-                  server.<br><br><a href="#step-tray" style="text-decoration:none" class="input-button-large">Ok,
-                    let's do this!</a></p>
-              </section>
-              <section id="step-tray" class="animated" data-closeable="true">
-                <p class="help-text"><img src="img/help-tray.jpg" class="help"><br>First click on the
-                  spacedesk-Icon<br>in the tray of your PC (lower right).<br><br>A new Window
-                  appears. Now Click on 'About...'<br><br><a href="#step-about" style="text-decoration:none"
-                    class="input-button-large">Next</a></p>
-              </section>
-              <section id="step-about" class="animated" data-closeable="true">
-                <p class="help-text"><img src="img/help-about.jpg" class="help"><br>Look for your
-                  IP-Address in the lower section.<br>Usually your IP starts with 192.168...<br><br><a
-                    href="#step-insert" style="text-decoration:none" class="input-button-large">Next</a></p>
-              </section>
-              <section id="step-insert" class="animated" data-closeable="false">
-                <h2>Hurray!</h2>
-                <p class="lead"><br><br>Now put your IP-Address in the textbox below and press the
-                  connect button.<br><br><a href="#close" style="text-decoration:none" class="input-button-large">Done
-                    !</a></p>
-              </section>
-              <div class="close"><i class="material-icons"></i></div>
-            </div>
-          </section>
+          
           <section id="settings" class="animated">
             <h3><i class="material-icons md-48"></i>Image Compression Quality</h3>
             <div class="section">
@@ -224,7 +173,6 @@
     </main>
     <div class="sliding-panel-fade-screen"></div>
     <aside id="menu" class="sliding-panel-content">
-      <header><img id="menu-logo" data-src="img/Logo.png" class="retina nowidth" src="img/Logo@2x.png"></header>
       <nav>
         <ul>
           <li><a class="showsettings_" href="#"><i class="material-icons"></i>Settings</a></li>
@@ -241,7 +189,7 @@
       </nav>
       <footer>
         <p id="menustatus"><span id="connectionStatus">Not Connected</span> <a id="generateStaticLink"
-            href="#staticlink" title="Autoconnect with spacedesk"><i class="material-icons md-18"></i></a></p>
+            href="#staticlink" ><i class="material-icons md-18"></i></a></p>
         <p id="desktopSize">1500 x 1000 (0 x 0 scaled)</p>
       </footer>
     </aside>
@@ -274,7 +222,7 @@
     <div class="modal-fade-screen">
       <div class="modal-inner">
         <div class="modal-close" for="modalStaticLink"></div>
-        <h1>Autoconnect with spacedesk</h1>
+        
         <p class="modal-intro">You can save the connection, by using the following Url.</p><textarea id="staticUrl"
           readonly="readonly">                </textarea><label class="input-button-large inverted"
           for="modalStaticLink">Close</label>
