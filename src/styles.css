@@ -118,7 +118,8 @@
 }
 
 html {
-    box-sizing: border-box
+    box-sizing: border-box;
+    overflow:hidden;
 }
 
 *,
@@ -560,14 +561,12 @@ input[type=checkbox]:checked:after {
 
 #start {
     min-height: 100%;
-    background: #1c812c;
     background-repeat: no-repeat;
-    background-size: 100%;
-    background-image: radial-gradient(#8423a1, #3e23a1);
+    background: url("./img/bg.jpg");
+    background-size: 100% 100%;
     position: relative;
     z-index: 100;
-    position: absolute;
-    background-color: transparent;
+    position: absolute; 
 }
 
 #start,
@@ -589,6 +588,12 @@ input[type=checkbox]:checked:after {
     transition: opacity 1s
 }
 
+.retina {
+    color: white;
+    font-weight: 800;
+    font-size: 4rem;
+}
+
 #start.active:before {
     opacity: 1
 }
@@ -608,13 +613,18 @@ input[type=checkbox]:checked:after {
 }
 
 #start main {
-    min-height: 10vh;
+    min-height: 100vh;
     max-height: 100vh;
+    display: flex;
+    align-items: center;
     width: 100%;
     text-align: center
 }
 
 #start main .container {
+    background-color: #000b;
+    border-radius: 30px;
+    box-shadow: #000 0 0 30px;
     min-width: auto
 }
 
